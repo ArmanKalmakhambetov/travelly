@@ -1,0 +1,593 @@
+/* lato-300 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/lato-v24-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* lato-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/lato-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* lato-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/lato-v24-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* lato-700italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 700;
+    src: url('../fonts/lato-v24-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* lato-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/lato-v24-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+ body{
+     font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+ }
+
+ .container{
+    max-width: 1060px;
+    margin: 0 auto;
+
+ }
+
+/* header sections styles */
+
+.header__container{
+
+}
+
+.header__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:flex-end;
+    padding-top: 56px;
+
+}
+
+.header__list{
+    display:flex;
+    flex-wrap: wrap;
+
+}
+.header__item{
+    margin-right: 80px;
+}
+
+.header__item:last-child{
+    margin-right: 0;
+}
+
+
+.header__link{
+    color: #FFF;
+
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    text-decoration: none;
+}
+
+
+.header__link:hover{
+    opacity: 0.7;
+}
+
+.title__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:flex-end;
+    padding-top: 177px;
+}
+
+.title__item {
+    color: #FFF;
+
+
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 60px;
+    text-decoration: none;
+    padding-bottom: 22px;
+    width: 620px;
+}
+
+.title__text {
+    color: #FFF;
+
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: none;
+    padding-bottom: 59px;
+    width: 550px;
+}
+
+.title__search {
+    display: flex;
+    gap: 60px;
+    width: 890px;
+    align-items: center;
+}
+
+.title__search-item {
+    align-items: center;
+}
+.title__search-head {
+    display: flex;
+    gap: 23px;
+    align-items: center;
+}
+.title__search-line {
+    padding-top: 22px;
+    stroke-width: 2px;
+    stroke: #BFC0C5;
+}
+
+.title__search-text {
+    color: #FFF;
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.title__search-button {
+    background: #1B7DFF;
+    color: #FFF;
+    padding: 15px 39px;
+
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: 0;
+}
+
+
+.img-background-rio {
+    background-image: url("../img/raphael-nogueira-CErddu-JwKw-unsplash 1.png");
+}
+
+.background-center {
+    height: 962px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    margin-top: -150px;
+    margin-bottom: 131px;
+    position: relative;
+}
+
+.features {
+    width: 1262px;
+    height: 655px;
+    flex-shrink: 0;
+
+    background: #FFF;
+    box-shadow: 0px 2px 20px 0px rgba(21, 24, 36, 0.16);
+}
+
+.features__title {
+    color: #102746;
+
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    margin: 93px 0 120px 99px;
+}
+
+.features__body {
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.features__item {
+    color: #000;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.features__item-title {
+    margin-top: 37px;
+    margin-bottom: 27px;
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.features__item-text {
+    margin-bottom: 39px;
+}
+
+.features__know {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.features__button {
+    color: #006DFE;
+    background: transparent;
+    border: 0;
+}
+
+.places {
+    display: flex;
+    justify-content: center;
+}
+
+.places__container {
+    width: 1262px;
+}
+
+.places__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.places__title-text {
+    color: #102746;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.places__line {
+    margin-bottom: 36px;
+}
+
+.places__title-view {
+    display: flex;
+    gap: 26px;
+}
+
+.places__button {
+    color: #006DFE;
+    text-align: right;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+
+    background: transparent;
+    border: 0;
+}
+
+.places__row{
+    display: flex;
+    gap: 10px;
+}
+
+
+
+.places__item-img-1 {
+    width: 624.5px;
+    height: 354px;
+    flex-shrink: 0;
+}
+
+.places__item-img-2 {
+    width: 413px;
+    height: 283px;
+    flex-shrink: 0;
+    margin-top: 10px;
+    fill: rgba(21, 24, 36, 0.40);
+}
+
+
+
+.places__item-text-1 {
+    position: absolute;
+    z-index: 1;
+    margin: 267px 229px 27px 26px;
+
+    color: #FFF;
+
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.places__item-text-2 {
+    position: absolute;
+    z-index: 1;
+    margin: 196px 227px 34px 32px;
+
+    color: #FFF;
+
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.prefecture {
+    display: flex;
+    justify-content: center;
+}
+
+.prefecture__container {
+    width: 1262px;
+    margin-top: 118px;
+}
+
+.prefecture__rio {
+    display: flex;
+    gap: 108px;
+}
+
+.prefecture__text-title {
+    margin-top: 20px;
+    margin-bottom: 85px;
+
+    color: #102746;
+
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 133.333% */
+}
+
+.prefecture__text {
+    color: #102746;
+
+    margin-right: 43px;
+    margin-bottom: 34px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+
+.prefecture__rio-image {
+    width: 597px;
+    height: 354px;
+    flex-shrink: 0;
+}
+
+.prefecture__button {
+    color: #006DFE;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    margin-right: 33px;
+}
+
+.prefecture__marvels {
+    margin-top: 70px;
+    display: flex;
+    gap: 108px;
+}
+
+.prefecture__marvels-image {
+    width: 597px;
+    height: 354px;
+    flex-shrink: 0;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+}
+
+.top__container {
+    width: 1262px;
+    margin-top: 147px;
+}
+
+.top__title-text {
+    color: #102746;
+
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.top__line {
+    margin-bottom: 54px;
+}
+
+.top__row {
+    display: flex;
+    gap: 53px;
+}
+
+.top__image {
+
+}
+
+.top__image-img {
+    width: 386px;
+    height: 377px;
+    flex-shrink: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.top__image-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 345px 25px 15px 25px;
+
+}
+
+.top__image-text {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+}
+
+.top__image-like {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    color: #FFF;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+}
+
+.top__likes {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.top__comments {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.top__item-text {
+    margin-top: 60px;
+    margin-bottom: 30px;
+
+    color: #102746;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+
+
+}
+
+.top__item-button {
+    margin-bottom: 58px;
+    padding: 12px 19px;
+    background: #006DFE;
+    border: 0;
+
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video__image {
+    height: 900px;
+    width: 100%;
+    flex-shrink: unset;
+}
+
+
+.video__button {
+    background: transparent;
+    border: 0;
+    position: absolute;
+}
+
+.footer__container {
+    height: 370px;
+    flex-shrink: 0;
+    background: #0E1D28;
+
+    display: flex;
+    gap: 250px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__logo {
+    width: 277px;
+}
+
+.footer__nav {
+    display: flex;
+    gap: 150px;
+}
+
+.footer__col {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer__title {
+    color: #FFF;
+
+    text-decoration: none;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+}
+
+.footer__text {
+    color: #FFF;
+
+    text-decoration: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+
+
